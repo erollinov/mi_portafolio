@@ -1,0 +1,292 @@
+/* ========== RESET Y CONFIGURACIÓN GENERAL ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* El padding y border se incluyen en el ancho/alto */
+}
+
+body {
+    font-family: 'Raleway', sans-serif; /* Fuente principal */
+    line-height: 1.6;
+    color: #333; /* Color de texto gris oscuro */
+    background-color: #f8f9fa; /* Fondo gris claro */
+}
+
+/* ========== NAVEGACIÓN (MENÚ) ========== */
+.navbar {
+    background-color: #2c3e50; /* Azul oscuro */
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between; /* Logo a la izquierda, menú a la derecha */
+    align-items: center;
+    position: fixed; /* Menú fijo en la parte superior */
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Para que esté por encima de todo */
+}
+
+.logo {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+}
+
+.nav-menu li {
+    margin-left: 2rem;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s; /* Transición suave para el hover */
+}
+
+.nav-menu a:hover {
+    color: #3498db; /* Azul claro al pasar el mouse */
+}
+
+/* ========== SECCIÓN HERO (INICIO) ========== */
+.hero {
+    background: linear-gradient(135deg, #3498db, #2c3e50); /* Degradado azul */
+    color: white;
+    text-align: center;
+    padding: 8rem 2rem 4rem; /* Espaciado: arriba 8rem para compensar menú fijo */
+    min-height: 100vh; /* Ocupa toda la pantalla */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nombre {
+    color: #f1c40f; /* Amarillo para resaltar el nombre */
+}
+
+.subtitulo {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.btn-contacto {
+    display: inline-block;
+    background-color: #f1c40f; /* Amarillo */
+    color: #2c3e50; /* Texto azul oscuro */
+    padding: 0.8rem 2rem;
+    border-radius: 50px; /* Bordes redondeados */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.3s;
+}
+
+.btn-contacto:hover {
+    background-color: #e67e22; /* Naranja al pasar el mouse */
+    transform: translateY(-3px); /* Efecto de levantar */
+}
+
+/* ========== SECCIONES GENERALES ========== */
+.section {
+    padding: 5rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #2c3e50;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ========== SOBRE MÍ ========== */
+.about-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Sombra suave */
+}
+
+.about-text p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+
+/* ========== HABILIDADES BLANDAS ========== */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Grid responsive */
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.skill-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px); /* Efecto de levantar al pasar el mouse */
+}
+
+.icono {
+    font-size: 3rem;
+    color: #3498db; /* Azul para iconos */
+    margin-bottom: 1rem;
+}
+
+.skill-card h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+/* ========== HABILIDADES TÉCNICAS ========== */
+.tech-container {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap; /* Para que sea responsive */
+}
+
+.tech-category {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    min-width: 250px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.tech-category h3 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.tech-category ul {
+    list-style: none;
+}
+
+.tech-category li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+    font-size: 1.1rem;
+}
+
+.tech-category li:last-child {
+    border-bottom: none;
+}
+
+/* ========== FOOTER ========== */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.footer-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+}
+
+.social-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: transform 0.3s;
+}
+
+.social-link:hover {
+    transform: translateY(-5px);
+    color: #f1c40f; /* Amarillo al pasar el mouse */
+}
+
+.social-link i {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.copyright {
+    margin-top: 2rem;
+    opacity: 0.8;
+    font-size: 0.9rem;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+@media (max-width: 768px) {
+    /* Menú para móviles */
+    .nav-menu {
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #2c3e50;
+        display: none; /* Oculto por defecto en móviles */
+    }
+    
+    .nav-menu.active {
+        display: flex; /* Se muestra cuando se activa */
+    }
+    
+    .nav-menu li {
+        margin: 1rem 0;
+        text-align: center;
+    }
+    
+    /* Hero más pequeño en móviles */
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .subtitulo {
+        font-size: 1.2rem;
+    }
+    
+    /* Grid de habilidades: 1 columna en móviles */
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Tecnologías en columna */
+    .tech-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    
+    /* Reducir padding en secciones */
+    .section {
+        padding: 3rem 1rem;
+    }
+}
