@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- METADATOS BÁSICOS -->
+    <meta charset="UTF-8"> <!-- Permite caracteres especiales (ñ, á, é, etc.) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace responsive la página -->
+    <title>Mi Portafolio | Erollinov</title> <!-- Título que aparece en la pestaña del navegador -->
+    
+    <!-- ENLACES A ARCHIVOS EXTERNOS -->
+    <link rel="stylesheet" href="style.css"> <!-- Nuestro archivo de estilos personalizado -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> <!-- Iconos -->
+    
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Raleway:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- ========== SECCIÓN 1: MENÚ DE NAVEGACIÓN ========== -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Mi Portafolio</div>
+            <ul class="nav-menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#habilidades-blandas">Habilidades Blandas</a></li>
+                <li><a href="#habilidades-tecnicas">Habilidades Técnicas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ========== SECCIÓN 2: INICIO / PRESENTACIÓN ========== -->
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <h1>Hola, soy <span class="nombre">Erollinov</span></h1>
+                <p class="subtitulo">Desarrollador en formación | Apasionado por la tecnología</p>
+                <a href="#contacto" class="btn-contacto">Contáctame</a>
+            </div>
+        </section>
+
+        <!-- ========== SECCIÓN 3: SOBRE MÍ ========== -->
+        <section id="sobre-mi" class="section">
+            <h2 class="section-title">Sobre Mí</h2>
+            <div class="about-container">
+                <div class="about-text">
+                    <p>Soy una persona apasionada por el desarrollo web y la tecnología. Actualmente me encuentro en formación constante, aprendiendo nuevas herramientas y metodologías.</p>
+                    <p>Me gusta trabajar en equipo y enfrentar nuevos desafíos que me permitan crecer profesionalmente. Mi objetivo es convertirme en un desarrollador full-stack.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== SECCIÓN 4: HABILIDADES BLANDAS ========== -->
+        <section id="habilidades-blandas" class="section">
+            <h2 class="section-title">Mis Habilidades Blandas</h2>
+            <div class="skills-container">
+                <!-- Carta 1 -->
+                <div class="skill-card">
+                    <i class="fas fa-comments icono"></i>
+                    <h3>Comunicación</h3>
+                    <p>Expreso ideas claramente y escucho activamente.</p>
+                </div>
+                <!-- Carta 2 -->
+                <div class="skill-card">
+                    <i class="fas fa-users icono"></i>
+                    <h3>Trabajo en Equipo</h3>
+                    <p>Colaboro efectivamente para objetivos comunes.</p>
+                </div>
+                <!-- Carta 3 -->
+                <div class="skill-card">
+                    <i class="fas fa-lightbulb icono"></i>
+                    <h3>Resolución de Problemas</h3>
+                    <p>Enfoque analítico para soluciones creativas.</p>
+                </div>
+                <!-- Carta 4 -->
+                <div class="skill-card">
+                    <i class="fas fa-clock icono"></i>
+                    <h3>Gestión del Tiempo</h3>
+                    <p>Organizo y priorizo tareas eficientemente.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== SECCIÓN 5: HABILIDADES TÉCNICAS ========== -->
+        <section id="habilidades-tecnicas" class="section">
+            <h2 class="section-title">Mis Habilidades Técnicas</h2>
+            <div class="tech-container">
+                <!-- Categoría 1 -->
+                <div class="tech-category">
+                    <h3><i class="fab fa-html5"></i> Frontend</h3>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript (Básico)</li>
+                        <li>Git & GitHub</li>
+                    </ul>
+                </div>
+                <!-- Categoría 2 -->
+                <div class="tech-category">
+                    <h3><i class="fas fa-database"></i> Herramientas</h3>
+                    <ul>
+                        <li>Visual Studio Code</li>
+                        <li>Terminal/CMD</li>
+                        <li>Figma (Básico)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========== SECCIÓN 6: FOOTER / PIE DE PÁGINA ========== -->
+    <footer id="contacto">
+        <div class="footer-content">
+            <h2>Contacto</h2>
+            <div class="social-links">
+                <!-- Enlace 1: Correo -->
+                <a href="mailto:tuemail@ejemplo.com" class="social-link">
+                    <i class="fas fa-envelope"></i>
+                    <span>Correo</span>
+                </a>
+                <!-- Enlace 2: GitHub -->
+                <a href="https://github.com/erollinov" target="_blank" class="social-link">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+                <!-- Enlace 3: LinkedIn -->
+                <a href="https://linkedin.com" target="_blank" class="social-link">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <!-- Enlace 4: Twitter -->
+                <a href="https://twitter.com" target="_blank" class="social-link">
+                    <i class="fab fa-twitter"></i>
+                    <span>Twitter</span>
+                </a>
+            </div>
+            <p class="copyright">© 2023 Erollinov - Todos los derechos reservados</p>
+        </div>
+    </footer>
+</body>
+</html>
